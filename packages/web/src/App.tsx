@@ -1,6 +1,6 @@
-import { PostList } from "./components/PostList";
-import { ConnectWalletButton } from "./components/ConnectWalletButton";
-import { CreatePost } from "./components/CreatePost";
+import { PostList } from './components/PostList';
+import { ConnectWalletButton } from './components/ConnectWalletButton';
+import { CreatePost } from './components/CreatePost';
 
 const App: React.FC = () => {
   return (

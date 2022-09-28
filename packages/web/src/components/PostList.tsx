@@ -1,7 +1,7 @@
-import { ethers } from "ethers";
-import { useCallback, useEffect, useState } from "react";
-import { contractAddress } from "../../../solidity/config";
-import Blog from "../../../solidity/artifacts/contracts/Blog.sol/Blog.json";
+import { ethers } from 'ethers';
+import { useCallback, useEffect, useState } from 'react';
+import { contractAddress } from 'solidity/config';
+import Blog from 'solidity/artifacts/contracts/Blog.sol/Blog.json';
 
 export const PostList: React.FC = () => {
   const [posts, setPosts] = useState<
@@ -18,7 +18,7 @@ export const PostList: React.FC = () => {
         id: it.id.toString(),
         title: it.title,
         content: it.content,
-      }))
+      })),
     );
   }, []);
 
@@ -30,7 +30,7 @@ export const PostList: React.FC = () => {
     <div>
       <h1>PostList</h1>
       <ul>
-        {posts.map((it) => (
+        {posts.map(it => (
           <li key={it.id}>
             {it.id} - {it.title} - {it.content}
           </li>
